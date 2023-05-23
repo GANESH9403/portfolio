@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,900&family=Shippori+Mincho:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--blue:aqua;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(56, 52, 52);
+}
+.header{
+background-color: rgb(46, 41, 41);
+width: 100%;
+height: 55px;
+display: flex;
+justify-content: space-between;
+position: fixed;
+z-index: 20;
+
+}
+
+.right{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head{
+    text-decoration: none;
+    color: white;
+    transition: all .3s linear 0s;
+}
+.head:hover{
+    color:var(--blue);
+
+}
+.left{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 8%;
+    justify-items: end;
+}
+.hello{
+    color: white;
+    margin-left: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+#name{
+    color: white;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+   
+}
+#full{
+    color: var(--blue);
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+
+ 
+}
+#para{
+    margin:20px 25px;
+    text-align: justify;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 19px;
+    font-family: 'Shippori Mincho', serif;
+    
+}
+#developer{
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    flex-wrap: nowrap;
+    height: 60%;
+    padding:75px 50px;
+    min-width: 400px;
+    margin-top: 5px;
+    justify-content: center;
+   
+    
+  
+}
+#end{
+    align-content: flex-end;
+    color: red;
+}
+.text-align{
+text-align: justify;
+padding: 5px;
+margin: 2px;
+color: red;
+}
+#btn{
+    width: 170px;
+    height: 50px;
+    min-height:50px;
+    margin-left:25px;
+    margin-top: 19px;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    outline: none;
+    background-color:var(--blue);
+    transition: all .3s linear 0s;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(43, 39, 39);
+    
+}
+
+.division{
+    width: 100%;
+    height: auto;
+  
+}
+
+.icon{
+    color: var(--blue);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    transition: all .3s linear 0s;
+}
+
+.glow:hover{
+    box-shadow: 0 0 8px 3px var(--blue);
+    color: black;
+    background-color: var(--blue);
+}
+.foot{
+    
+    display: flex;
+    margin-left: 25px;
+    gap: 25px;
+}
+
+.float{ 
+    animation: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating{
+    0%{
+        transform:translate(0,0px);
+    }
+    50%{
+        transform:translate(0,20px);
+    }
+    0%{
+        transform:translate(0,-0px);
+    }
+}
+#marz{
+    margin: 0;
+}
+.burger{
+    height: 30px;
+    width:25px;
+    margin-right: 40px;
+    border: none;
+    background-color: transparent;  
+    display: none;
+
+}
+
+.l{
+    width: 100%;
+    height: 3px;
+    background-color:white;
+    margin: 4px;
+    display: none;
+}
+.padz{
+   padding-left: 0;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+    transition: all 0.2s linear;
+    display: flex;
+    gap:1px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-center{
+    align-items: center;
+    justify-content: center;
+}
+.frame{
+    border: 3px solid var(--blue);
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 30px;
+    border-radius: 25px;
+    gap: 25px;
+}
+.card:hover{
+    scale: 1.02;
+}
+.main-center{
+    justify-content: center;
+    flex-direction: column;
+    
+    row-gap: 25px;
+    flex-wrap: nowrap;
+   }
+.ico{
+    font-size: 35px;
+    color:var(--blue);
+}
+
+.main-contact{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: red;
+}
+
+form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+
+}
+.txt-box{
+    height: auto;
+    width: auto;
+    min-height:5%;
+    min-width: 25%;
+    
+}
+.box-cont{
+height: 70%;
+width: 70%;
+display: flex;
+background-color: blue;
+gap: 4px;
+flex-direction: row;
+}
+.box-contact{
+    height: 100%;
+    display: flex;
+
+    width: 50%;
+background-color: pink;
+}
+.box-left{
+    height: 100%;
+    display: flex;
+
+    width: 50%;
+background-color: pink;
+}
+#portfolio,#service,#about,#contact{
+    height: auto;  
+}
+
+.potfo-main{
+    display: grid;
+    height:auto;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 80px;
+     
+}
+
+.portfo-box{
+    height: 300px;
+    width: 300px;
+    min-height: 300px;
+    min-width: 300px;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    margin: 50px;
+}
+
+@media only screen and (max-width: 950px){
+
+    .hide{
+    visibility: hidden;
+    }
+    .card{
+        height:auto;
+        width: 300px;
+    }
+    .frame{
+       height:90%;
+        width: 40%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 350px;
+        padding: 10px; 
+        border: none;
+        
+    }
+}
+@media only screen and (max-width: 800px){
+.frame{
+    font-size: -75%;
+    margin-top: 50px;
+}
+   .head{
+    display: none;
+   }
+   .burger,.l{
+    display: block;
+   }
+   .right{
+    align-items: center;
+    justify-content: end;
+   }
+   
+   .box{
+    padding: 0;
+    padding-top: 50px;
+    margin: 0;
+    width: auto;
+    height: auto;
+    
+   }
+ 
+   .main{
+    justify-content: flex-start;
+   }
+   .swap{
+    flex-direction: row-reverse;
+   }
+ 
+     .image{
+        width: 500px;
+        width: 500px;
+    }
+    
+    .potfo-main{
+        margin-top: 180px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8px;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+
+}
+
+
+
